@@ -23,3 +23,22 @@ function adicionarAmigo() {
     campoAmigo.value = '';
     campoAmigo.focus(); // Coloca o cursor de volta no campo para facilitar a adição de novos nomes
 }
+
+// Função que percorre o array amigos e adiciona cada nome como um elemento <li> dentro de uma lista HTML
+function atualizarLista() {
+    // Obter o elemento da lista
+    const lista = document.getElementById('listaAmigos');
+
+    // Limpar a lista existente para evitar duplicatas
+    lista.innerHTML = '';
+
+    // Percorrer o array e adicionar cada amigo à lista
+    for (let i = 0; i < amigos.length; i++) {
+        // Cria um elemento de lista (<li>)
+        const item = document.createElement('li');
+        item.textContent = amigos[i];
+        
+        // Adiciona o item à lista no HTML
+        lista.appendChild(item);
+    }
+}
