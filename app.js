@@ -42,3 +42,25 @@ function atualizarLista() {
         lista.appendChild(item);
     }
 }
+
+// Função que seleciona aleatoriamente um dos nomes armazenados no array amigos.
+function sortearAmigo() {
+    // Validar que há amigos disponíveis
+    if (amigos.length < 2) {
+        alert('Adicione pelo menos 2 amigos para realizar o sorteio!');
+        return; // Encerra a função
+    }
+
+    // Gerar um índice aleatório
+    // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo)
+    // Multiplicamos pelo tamanho do array para obter um número no intervalo desejado
+    // Math.floor() arredonda para o número inteiro mais próximo para baixo, resultando em um índice válido (de 0 a amigos.length - 1)
+    const indiceSorteado = Math.floor(Math.random() * amigos.length);
+
+    // Obter o nome sorteado
+    const amigoSorteado = amigos[indiceSorteado];
+
+    // Mostrar o resultado
+    const elementoResultado = document.getElementById('resultado');
+    elementoResultado.innerHTML = `<p>O amigo secreto é: <strong>${amigoSorteado}</strong></p>`;
+}
