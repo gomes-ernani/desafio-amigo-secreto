@@ -32,13 +32,8 @@ Este é um projeto front-end estático e não requer nenhuma instalação de dep
     git clone https://github.com/gomes-ernani/desafio-amigo-secreto.git
     ```
 
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd desafio-amigo-secreto
-    ```
-
-3.  **Abra o arquivo `index.html` no seu navegador:**
-    -   Você pode simplesmente clicar duas vezes no arquivo `index.html` na sua pasta.
+2.  **Abra o arquivo `index.html` no seu navegador:**
+    -   Você pode simplesmente clicar duas vezes no arquivo `index.html` na pasta `desafio-amigo-secreto`.
     -   Ou, se estiver usando o VS Code com a extensão "Live Server", pode clicar com o botão direito no `index.html` e selecionar "Open with Live Server".
 
 E pronto! A aplicação estará funcionando.
